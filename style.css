@@ -1,9 +1,17 @@
+html,
 body {
     font-family: 'Roboto', sans-serif;
+	height: 100%; /*Высота 100 процентов для того чтобы прижать футер*/
 }
+
 
 body, ul {
     margin: 0;
+}
+
+/* Определение минимальной высоты 100 процентов для прижатия футера */
+main{
+    min-height: 100%;
 }
 
 .main-menu ul {
@@ -45,10 +53,20 @@ p {
     text-align: justify;
 }
 
+/* Верхний текст по центру */
+.header__text{
+    text-align: center;
+}
+
 .footer {
+    flex: 0 0 auto;
     background-color: black;
     color: white;
     padding: 20px 0;
+}
+/* Текст футера по центру */
+.footer__text{
+    text-align: center;
 }
 
 .btn {
