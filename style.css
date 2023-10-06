@@ -15,13 +15,26 @@ main{
 }
 
 .main-menu ul {
+
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
 .main-menu li {
+    
     display: inline;
     margin-right: 10px;
+}
+
+.vhod{
+    float: right;
+}
+
+.main-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .main-menu li:last-child {
@@ -33,6 +46,13 @@ main{
     color: white;
     padding: 20px 0;
     background-image: url(images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__background{
+
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -167,3 +187,10 @@ td, th {
     margin: 0 auto;
     font-size: 25px;
     }
+
+    .auth__form{
+        margin: auto;
+    }
+
+    #outer { width: 600px; }
+    #inner { width: 250px; margin: 0 auto; }
