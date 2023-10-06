@@ -23,7 +23,7 @@
                     <h1 class="text-upper">Стульников Сергей Андреевич</h1>
                     <p class="header__text w-50 mx-auto">ЗА РОССИЮ, Я РУССКИЙ</p>
                     <!-- mailto - используется для почты -->
-                    <a class="btn btn-white" href="mailto:serstul5555@gmail.com">Написать мне</a>
+                    <a class="btn" href="mailto:serstul5555@gmail.com">Написать мне</a>
                 </div>
             </div>
 
@@ -31,26 +31,24 @@
         <main class="main__background">
             <br><h1 class="text-center">Вход</h1> 
             <div class="container">
-                <div id="outer">
-                    <div id="inner">
-                        <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> 
-                            <div class="form-group"> 
-                                <label for="fio">Введите логин:</label><br> 
-                                <input type="login" id="login" name="login" placeholder="" value=""> 
-                            </div>                      
-                            <div class="form-group"> 
-                                <label for="password">Введите пароль:</label><br>
-                                <input type="password" id="password" name="password" required> 
-                            </div> 
+                <div class="auth__box">
+                    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> 
+                        <div class="form-group"> 
+                            <label for="fio">Введите логин:</label><br> 
+                            <input type="login" id="login" name="login" placeholder="" value=""> 
+                        </div>                      
+                        <div class="form-group"> 
+                            <label for="password">Введите пароль:</label><br>
+                             <input type="password" id="password" name="password" required> 
+                        </div> 
                 
-                            <div class="form-group">
-                                <input type="checkbox" name="agree" id="agree">
-                                <label class="lable display-inline" for="agree">Запомнить меня</label>
-                            </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label class="lable display-inline" for="agree">Запомнить меня</label>
+                        </div>
                                 
-                            <button class="btnform" type="submit">Войти</button><br><br>
-                        </form>
-                    </div>
+                        <button class="btnform" type="submit">Войти</button><br><br>
+                    </form>
                 </div>
             </div>
         </main>
