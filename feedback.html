@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ad3c896fcc.js" crossorigin="anonymous"></script>
     </head>
     <body>
 
@@ -29,66 +30,73 @@
         </header>
         
         <main>
-            <h1 class="text-center">Форма обратной связи</h1> 
             <div class="container">
-                <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> 
-                    <div class="form-group"> 
-                        <label for="fio">ФИО</label> 
-                        <input type="text" id="fio" name="fio" placeholder="Введите ФИО" value="Иванов Иван Иванович"> 
-                    </div> 
-             
-                    <div class="form-group"> 
-                        <label for="email">Электронная почта</label> 
-                        <input type="email" id="email" name="email" required> 
-                    </div> 
-             
-                    <fieldset> 
-                        <legend>Как вы о нас узнали?</legend> 
-             
+                <div class="form__content">
+                    <h1 class="text-center">Форма обратной связи</h1> 
+                    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data"> 
                         <div class="form-group"> 
-                            <input type="radio" name="source" id="friends" value="friends"> 
-                            <label for="friends">Друзья</label> 
+                            <label for="fio">ФИО</label><br>
+                            <input class="input__border" type="text" id="fio" name="fio" placeholder="Иванов Иван Иванович"> 
                         </div> 
-             
+                 
                         <div class="form-group"> 
-                            <input type="radio" name="source" id="advertising" value="advertising"> 
-                            <label for="advertising">Реклама</label> 
+                            <label for="email">Электронная почта</label><br>
+                            <input class="input__border" type="email" id="email" name="email" required placeholder="ivanov@mail.ru"> 
                         </div> 
-                    </fieldset> 
-                     
-                    <div class="form-group"> 
-                            <label for="msg_type">Тип обращения</label> 
-                            <select name="msg_type" id="msg_type"> 
-                                <option value="1">Жалоба</option> 
-                                <option value="2">Обращение</option> 
-                            </select> 
-                    </div> 
-            
-                    <div class="form-group">
-                        <label for="massage">Текст Сообщения</label>
-                        <br><textarea name="massage" id="massage" cols="20" rows="10"> Введите текст сообщения</textarea>
-                    </div>
-                    <div class="form-group">
-                        <labale for="file">Вложение</labale>
-                        <input type="file" name="file" id="file" multiple>
-                    </div>
-            
-                    <div class="form-group">
-                        <input type="checkbox" name="agree" id="agree">
-                        <label class="lable display-inline" for="agree">Даю согласие на обработку персональных данных</label>
-                    </div>
-                        
-         
-                <button class="btnform" type="submit">Отправить</button><br><br>
-            </form> 
+                 
+                        <fieldset class="fieldset__class"> 
+                            <legend class="legend__center">Как вы о нас узнали?</legend> 
+                 
+                            <div class="form-group--left">
+                                <input type="radio" name="source" id="friends" value="friends"> 
+                                <label for="friends">Друзья</label> 
+
+                                <input type="radio" name="source" id="advertising" value="advertising"> 
+                                <label for="advertising">Реклама</label> 
+                            </div> 
+                        </fieldset> 
+                         
+                        <div class="form-group"> 
+                                <br><label for="msg_type">Тип обращения</label>
+                                <select name="msg_type" id="msg_type"> 
+                                    <option value="1">Жалоба</option> 
+                                    <option value="2">Обращение</option> 
+                                </select> 
+                        </div> 
+                
+                        <div class="form-group">
+                            <label for="massage">Текст Сообщения</label>
+                            <br><textarea placeholder="Введите текст сообщения" name="massage" id="massage" cols="20" rows="10"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <labale for="file">Вложение</labale>
+                            <input type="file" name="file" id="file" multiple>
+                        </div>
+                
+                        <div class="form-group">
+                            <input type="checkbox" name="agree" id="agree">
+                            <label class="lable display-inline" for="agree">Даю согласие на обработку персональных данных</label>
+                        </div>
+                            
+             
+                        <button class="btnform" type="submit">Отправить</button><br><br>
+                    </form>
+                </div> 
             </div>
         </main>
 
         <footer class="footer">
             <div class="container">
-                <p class="footer__text">
-                    &copy; Стульников С.А.
-                </p>
+                <div class="footer_content">
+                    <div class="footer__icon">
+                        <a class="btn__icon" href="https://vk.com/serstul" target="_blank"><i class="fa-brands fa-vk"></i></a> 
+                        <a class="btn__icon" href="https://t.me/StulPlay" target="_blank"><i class="fa-brands fa-telegram"></i></a> 
+                        <a class="btn__icon" href="https://steamcommunity.com/id/stulplay/" target="_blank"><i class="fa-brands fa-steam"></i></a> 
+                        <a class="btn__icon" href="https://github.com/StulPlay" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a class="btn__icon" href="https://www.twitch.tv/stulplay" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+                        <a class="btn__icon" href="https://www.youtube.com/@stulplay9702/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
             </div>
         </footer>
     </body> 

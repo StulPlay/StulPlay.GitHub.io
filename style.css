@@ -122,6 +122,14 @@ p {
     height: 100%;
 }
 
+.btn__icon{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: auto;
+    
+}
+
 .text-center {
     text-align: center;
 }
@@ -164,16 +172,32 @@ td, th {
     max-width: 650px;
 }
     
-.text-center{
-    text-align: center;
-}
-    
 input, textarea, select {
     font-size: inherit;
+}
+
+.input__border{
+    border: 3px solid; 
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+textarea{
+    width: 90%; 
+    border: 3px solid; 
+    border-radius: 30px; 
+    padding: 20px 5px 5px 20px;
+    resize: none;
+}
+
+.fieldset__class{
+    border: 3px solid;
+    border-radius: 30px;
 }
     
 .form-group{
     margin-bottom: 20px;
+    text-align: center;
 }
     
 .btnform{
@@ -196,3 +220,38 @@ input, textarea, select {
     justify-content: center;
     align-items: center;
 }
+
+.footer_content{
+    display: flex;
+    justify-content: center;
+
+}
+.footer__icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.form__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(243, 234, 248);
+    margin: 100px 0;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.legend__center{
+    text-align: center;
+}
+
+.form-group--left{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 2px 6px 6px 2px;
+}
+
