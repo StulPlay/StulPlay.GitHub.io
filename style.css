@@ -54,7 +54,7 @@ main{
 
 
 .main__background{
-    padding-top: 60px;
+    padding: 60px 0;
     background-image: url(images/5968949.jpg);
     background-repeat: no-repeat;
     background-size: cover;
