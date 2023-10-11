@@ -52,15 +52,9 @@ main{
 
 }
 
-.main__background{
-    background-image: url(images/5968949.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
 
-.main__background__form{
-    padding-top: 100px;
+.main__background{
+    padding-top: 60px;
     background-image: url(images/5968949.jpg);
     background-repeat: no-repeat;
     background-size: cover;
