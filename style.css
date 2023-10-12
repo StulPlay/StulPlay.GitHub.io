@@ -58,7 +58,7 @@ main{
     background-image: url(images/5968949.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+    height: auto;
 }
 
 .container {
