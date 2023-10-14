@@ -59,11 +59,7 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-}
-
-.container {
-    max-width: 75%;
-    margin: 0 auto;
+    
 }
 
 .main-menu a {
@@ -87,6 +83,8 @@ p {
     background-color: black;
     color: white;
     padding: 20px 0;
+    position: relative;
+
 }
 /* Текст футера по центру */
 .footer__text{
@@ -177,6 +175,7 @@ td, th {
 .container {
     font-size: 20px;
     max-width: 650px;
+    margin: 0 auto;
 }
     
 input, textarea, select {
@@ -249,6 +248,8 @@ textarea{
     background: rgb(243, 234, 248);
     border: 3px solid black;
     border-radius: 30px;
+    position: relative;
+
 }
 
 .legend__center{
@@ -262,4 +263,105 @@ textarea{
     padding: 2px 6px 6px 2px;
 }
 
+.main__background__eft{
+    background: rgb(255, 255, 255);
+    height: auto;
+}
+
+.container__eft{
+    font-size: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.container__eft__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.traders{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: row;
+    border-radius: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    
+
+}
+
+.traders__btn{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: color 1s, border-color 1s;
+    display: flex;
+    justify-content: center; 
+    align-items: end;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.traders__btn:hover {
+    color: rgb(0, 0, 255);
+    border-color: rgb(0, 0, 255);
+}
+
+.tarders__img img{
+    display: flex;
+    justify-content: center;
+    border:3px solid black;
+    border-radius: 50%;
+    width: 127px;
+    height: 127px;
+}
+
+.traders__card{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 250px;
+    border: 3px solid rgb(0, 0, 0);
+    margin: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    align-items: center;
+    padding-bottom:50px; 
+    background: rgb(224, 218, 196);
+    
+}
+
+.traders__name{
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.traders__story{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.traders__bot{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.traders__text{
+    text-align: justify;
+}
 
