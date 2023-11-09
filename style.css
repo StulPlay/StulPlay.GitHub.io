@@ -405,3 +405,32 @@ textarea{
 .hero__text-center{
     text-align: center;
 }
+
+
+@media print {
+    body {
+        background: white; 
+    }
+
+    .header, .footer {
+        display: none;
+    }
+
+    .main__background__eft {
+        padding-top: 0; 
+    }
+
+    .traders__card {
+        height: 550px;
+        page-break-inside: avoid; 
+    }
+
+    .traders__text {
+        font-size: 14px;
+    }
+
+    .tarders__img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
