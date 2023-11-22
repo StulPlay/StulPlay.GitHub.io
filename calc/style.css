@@ -1,0 +1,256 @@
+*{margin:0; padding:0;}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+	height: 100%; /*Высота 100 процентов для того чтобы прижать футер*/
+}
+
+body, ul {
+    margin: 0;
+}
+
+.container {
+    font-size: 20px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+main{
+    min-height: 100%;
+}
+
+.main-menu ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    
+    display: inline;
+    margin-right: 10px;
+}
+
+.login{
+    float: right;
+    padding:0px 20px 0px 20px;
+}
+
+.main-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li:last-child {
+    margin-right: 0;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+
+}
+
+.header__text{
+    text-align: center;
+}
+
+.footer {
+    flex: 0 0 auto;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+
+}
+/* Текст футера по центру */
+.footer__text{
+    text-align: center;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: center;
+
+}
+.footer__icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: color 1s, border-color 1s;
+}
+
+.btn-white {
+    color: white ;
+    border-color: white;
+}
+
+.btn:hover {
+    color: blue;
+    border-color: blue;
+}
+
+.btn__icon{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: auto;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+html, body{
+    width:100%; 
+    height:100%; 
+    font-family: 'Orbitron', sans-serif;    
+}
+
+.wrap{
+    position: absolute;
+	display: table;
+	left: 50%;
+	top: 50%;
+	margin: -255px 0 0 -195px;	
+}
+
+#inputField {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-y: hidden;
+    padding: 10px 0px 10px 10px; /* Опционально, чтобы создать отступ внутри элемента */
+}
+
+#inputField::-webkit-scrollbar {
+    width: 8px;
+}
+
+#inputField::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 4px;
+}
+
+#inputField::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Для Firefox */
+#inputField {
+    scrollbar-width: thin;
+    scrollbar-color: #808080 #f0f0f0;
+}
+
+#calculator{
+    border-radius: 5px;
+    background: #27282A;
+    padding: 10px;
+    height: 510px;
+    width: 390px;
+    box-shadow: 0px 5px 0px 0px grey;
+}
+
+
+.input{   
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    
+    width: 350px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    border: 2px solid grey;
+    border-radius: 6px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: inset 0px 0px 10px 0px grey;
+}
+
+button {  
+    font-family: 'Orbitron', sans-serif;
+    font-size: 30px;
+    
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    margin: 10px 4px 10px 8px;
+    height: 70px;
+    width: 80px;
+    box-shadow: 0px 8px 0px 0px grey;
+}
+
+button:active {
+    -webkit-transform: translate(0px, 3px);
+            transform: translate(0px, 3px);
+    box-shadow: none;
+}
+
+button,
+button:hover,
+button:active,
+button:visited {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+#clear{
+    background:#F15F74;
+}
+#divi,#multi,#sub, #add{
+    background: #5481E6;
+}
+#equal{
+    background: #98CB4A;
+}
+
+
+#equal, #dot, #sub{       
+    position: absolute;    
+    height: 70px;
+}
+#add{
+    position: absolute;    
+    height: 160px;
+}
+
+#zero{
+    width: 80px;
+}
