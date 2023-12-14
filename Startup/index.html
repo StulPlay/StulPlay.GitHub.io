@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Безалкогольная Водка</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logotype1.jpg" type="image/x-icon">
+</head>
+<body>
+
+<!-- Навигационная панель -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Безалкогольная Водка</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">О нас</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#process">Процесс</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- О нас -->
+<div class="container my-5" id="about">
+    <div class="row">
+        <div class="col-md-6 order-md-2">
+            <img src="logo.jpg" alt="Ваш логотип" class="img-fluid">
+        </div>
+        <div class="col-md-6 order-md-1">
+            <h1>Безалкогольная Водка</h1>
+            <p class="lead">Мы гордимся тем, что создаем инновационную безалкогольную водку, которая предоставляет вам возможность наслаждаться настоящим вкусом водки без вреда для вашего здоровья. Наши уникальные рецепты и технологии гарантируют неповторимый опыт для каждого клиента.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Процесс производства -->
+<div class="container-fluid bg-light py-5" id="process">
+    <div class="container">
+        <h2 class="text-center mb-4">Процесс производства</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <h4>1. Исследование и разработка</h4>
+                    <p>Наши эксперты по вкусам и ингредиентам тщательно исследуют и разрабатывают уникальные сочетания, чтобы создать вкус безалкогольной водки, близкий к настоящему. Мы стремимся достичь совершенства в каждой бутылке.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <h4>2. Уникальная технология</h4>
+                    <p>Мы используем современные технологии, чтобы создать алкогольную текстуру, сохраняя при этом безалкогольные свойства. Это позволяет нам предоставлять вам аутентичный опыт без вреда для вашего здоровья.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="feature-box">
+                    <h4>3. Тщательное тестирование</h4>
+                    <p>Каждая партия нашей безалкогольной водки проходит тщательное тестирование на качество, чтобы гарантировать ее безупречность и соответствие высоким стандартам, которым мы следуем.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Контакты -->
+<div class="container my-5" id="contact">
+    <h2 class="text-center mb-4">Свяжитесь с нами</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Ваш Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Ваше сообщение</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Подвал страницы -->
+<footer class="bg-dark text-light text-center py-3">
+    <p>&copy; 2023 Безалкогольная Водка. Все права защищены.</p>
+</footer>
+
+<!-- Bootstrap и скрипты -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
