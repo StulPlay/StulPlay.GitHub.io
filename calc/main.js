@@ -1,11 +1,16 @@
 // Обработчик события загрузки страницы
-window.onload = function(){    
+window.onload = function () {
     // Назначение обработчика события click на все кнопки
-    $('button').click(function(){        
-        clickedButton = $(this).attr('id');  
-        click();
-    });    
+    var buttons = document.getElementsByTagName('button');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+            clickedButton = this.id;
+            click();
+        });
+    }
 }
+
+
 
 // Функция для преобразования инфиксной записи в обратную польскую нотацию (ОПН)
 function convertToRPN(infix) {

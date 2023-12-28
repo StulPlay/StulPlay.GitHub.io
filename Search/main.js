@@ -118,12 +118,12 @@ function downloadData(page = 1, mode = 'default') {
 }
 
 function perPageBtnHandler(event) {
-    downloadData(1);
+    downloadData(1, 'search');
 }
 
 function pageBtnHandler(event) {
     if (event.target.dataset.page) {
-        downloadData(event.target.dataset.page);
+        downloadData(event.target.dataset.page, 'search');
         window.scrollTo(0, 0);
     }
 }
