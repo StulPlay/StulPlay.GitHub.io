@@ -1,314 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=a265e80c-4989-4b66-9b42-4ddb0ad65a8d&lang=ru_RU" type="text/javascript"></script>
-
-    <link rel="icon" href="image/favicon-32x32.png" type="image/x-icon">
-    <title>Пешеходные маршруты Москвы</title>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Веб-разработчик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ad3c896fcc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-<header class="bg-dark text-white p-4">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <img src="image/logo.jpg" alt="Ваш логотип" class="img-fluid rounded" style="width: 50px; height: 50px;">
-            <a class="navbar-brand mx-5" href="#">Экскурсии по Москве</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>        
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="">Личный кабинет</a>
-                    </li>
+    <header class="header">
+        <div class="container">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="eft/eft.html">Тарков</a></li>
+                    <li><a href="calc/index.html">Калькулятор</a></li>
+                    <li><a href="tic-tac-toe/index.html">Крестики-Нолики</a></li>
+                    <li class="login"><a href="auth.html">Вход</a></li>
                 </ul>
-            </div>
-            
-        </nav>
-    </div>
-</header>
-
-<div class="container mt-4">
-    <div id="alerts" class="alerts"></div>
-</div>
-
-<div class="container my-5" id="about">
-    <div class="row">
-        <div class="col-md-6 order-md-2">
-            <img src="image/Moscow.png" alt="Ваш логотип" class="img-fluid rounded img-thumbnail" style="width: 612.5px; height: 350px;">
+            </nav>
         </div>
-        <div class="col-md-6 order-md-1">
-            <h1 class="">Шаг за шагом открытый мир Московских улиц!</h1>
-            <p class="lead text-secondary">Московские Пешеходные Путеводители - это ваш ключ к захватывающему и неповторимому миру Москвы. Мы являемся экспертами в области разработки уникальных пешеходных маршрутов, призванных раскрывать богатство истории, культуры и архитектуры столицы России. Присоединяйтесь к Московским Пешеходным Путеводителям и откройте для себя Москву в новом свете!</p>
-        </div>
-    </div>
-</div>
-
-<div class="container mt-4">
+    </header>
     
-    <h2 class="">Почему выбирают нас:</h2>
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <i class="bi bi-bank" style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <i class="bi bi-bank " style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <i class="bi bi-bank " style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <i class="bi bi-bank " style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-3 text-center">
-            <i class="bi bi-browser-safari" style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <i class="bi bi-browser-safari" style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <i class="bi bi-browser-safari" style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-
-        <div class="col-md-3 text-center">
-            <i class="bi bi-browser-safari" style="font-size: 100px;"></i>
-            <p class="lead text-secondary">Эксклюзивные маршруты: Мы предлагаем уникальные маршруты, которые приведут вас к скрытым сокровищам Москвы, недоступным для обычных туристов.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container mt-4">
-    <h2>Откуда вы хотите начать путешествие:</h2>
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" id="address" placeholder="Введите адрес для поиска" aria-label="Введите адрес для поиска" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" onclick="searchAddress()" id="button-addon2">Найти</button>
-      </div>
-      <div class="" id="map" style="width: 100%; height: 400px;"></div>
-</div>
-
-
-
-<div class="container mt-4">
-    <h2>Пешеходные маршруты Москвы</h2>
-    <form>
-        <div class="row">
-            <div class="col-md-3 mb-2">
-                <label for="search" class="form-label">Поиск по названию</label>
-                <input type="text" class="form-control" id="search">
+    <main>
+        <div class="container">
+            <div class="text-center">
+                <h1 class="text-upper">Стульников Сергей Андреевич</h1>
+                <p class="header__text w-50 mx-auto">ЗА РОССИЮ, Я РУССКИЙ</p>
+                <!-- mailto - используется для почты -->
+                <a class="btn" href="mailto:serstul5555@gmail.com">Написать мне</a>
             </div>
-            <div class="col-md-3 mb-2">
-                <label for="dost" class="form-label">Достопримечательность</label>
-                <select class="form-select" id="dost">
-                    <option value="item1">Не выбрано</option>
-                    <option value="item2">Item 1</option>
-                    <option value="item3">Item 2</option>
-                    <option value="item4">Item 3</option>
-                </select>
-            </div>
-            
-        </div>
-    </form>
-    <div class="table-responsive">
-        <table class="table table-striped table-bordered text-center mt-4">
-            <thead>
-                <tr>
-                    <th>Название маршрута</th>
-                    <th>Краткое описание</th>
-                    <th>Основные объекты</th>
-                    <th>Выбор маршрута</th>
-                </tr>
-            </thead>
-            <tbody id="routesTableBody">
-                <tr id="routeRow1">
-                    <td>Маршрут 1</td>
-                    <td>Описание маршрута 1</td>
-                    <td>Объекты 1</td>
-                    <td><button class="btn btn-success" onclick="selectRoute(1)">Выбрать</button></td>
-                </tr>
-                <tr id="routeRow2">
-                    <td>Маршрут 2</td>
-                    <td>Описание маршрута 2</td>
-                    <td>Объекты 2</td>
-                    <td><button class="btn btn-success" onclick="selectRoute(2)">Выбрать</button></td>
-                </tr>
-                <tr id="routeRow3">
-                    <td>Маршрут 3</td>
-                    <td>Описание маршрута 3</td>
-                    <td>Объекты 3</td>
-                    <td><button class="btn btn-success" onclick="selectRoute(3)">Выбрать</button></td>
-                </tr>
-                <tr id="routeRow4">
-                    <td>Маршрут 4</td>
-                    <td>Описание маршрута 4</td>
-                    <td>Объекты 4</td>
-                    <td><button class="btn btn-success" onclick="selectRoute(4)">Выбрать</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="row gap-2 justify-content-center input-group mb-3">
-        <button type="button" id="firstPageButton" class="btn btn-primary col-xs-2 col-sm-2 mr-5">Первая страница</button>
-        <button type="button" id="lastPageButton" class="btn btn-primary col-xs-2 col-sm-2 ml-5">Последняя страница</button>
-    </div>
-    <nav>
-        <ul class="pagination justify-content-center">
-            <li class="page-item"><a class="page-link">Назад</a></li>
-            <li class="page-item"><a class="page-link">1</a></li>
-            <li class="page-item"><a class="page-link">2</a></li>
-            <li class="page-item"><a class="page-link">3</a></li>
-            <li class="page-item"><a class="page-link">Далее</a></li>
-        </ul>
-    </nav>   
-</div>
+            <section id="about">
+                <h2>Обо мне</h2>
+                <figure class="avatar">
+                    <img src="images/pngegg.png" alt="Person">
+                </figure>
+                <p>Я программист с большой страстью к созданию кода и разработке проектов. Это мое призвание, и я наслаждаюсь каждой секундой, проведенной за компьютером, принося в жизнь свои идеи и решения!
 
-<div class="container mt-4" id="DisplayNone" style="display: none;">
-    <h2 id="selectedRouteTitle">Доступные гиды по маршруту:</h2>
-    <form>
-        <div class="row">
-            <div class="col-md-3 mb-2">
-                <label for="languageFilter" class="form-label">Выберите язык:</label>
-                <select class="form-select" id="languageFilter">
-                    <option value="">Не выбрано</option>
-                </select>
-            </div>
-            <div class="col-md-3 mb-2">
-                <label for="experienceFrom" class="form-label">Опыт работы от:</label>
-                <input type="text" class="form-control" id="experienceFrom">
-            </div>
-            <div class="col-md-3 mb-2">
-                <label for="experienceTo" class="form-label">Опыт работы до:</label>
-                <input type="text" class="form-control" id="experienceTo">
-            </div>
-        </div>
-    </form>
-    <div class="table-responsive">
-        <table class="table table-striped table-bordered text-center mt-4">
-            <thead>
-                <tr>
-                    <th>Фото</th>
-                    <th>ФИО</th>
-                    <th>Языки</th>
-                    <th>Опыт работы</th>
-                    <th>Стоимость (руб/час)</th>
-                    <th>Выбор гида</th>
-                </tr>
-            </thead>
-            <tbody id="guidesTableBody">
-                <tr id="guideRow1">
-                    <td><img src="image/Photo.jpg" alt="" width="38px" height="38px"></td>
-                    <td>Иванов Сергей Петрович</td>
-                    <td>Русский</td>
-                    <td>5 лет</td>
-                    <td>2800</td>
-                    <td><button class="btn btn-success" onclick="selectGuide(1)">Выбрать</button></td>
-                </tr>
-                <tr id="guideRow2">
-                    <td><img src="image/Photo.jpg" alt="" width="38px" height="38px"></td>
-                    <td>Маракасовна Ольга Васильевна</td>
-                    <td>Английский</td>
-                    <td>3 года</td>
-                    <td>3500</td>
-                    <td><button class="btn btn-success" onclick="selectGuide(2)">Выбрать</button></td>
-                </tr>
-                <tr id="guideRow3">
-                    <td><img src="image/Photo.jpg" alt="" width="38px" height="38px"></td>
-                    <td>Депардье Костантин Константинович</td>
-                    <td>Французский, немецкий</td>
-                    <td>7 лет</td>
-                    <td>5000</td>
-                    <td><button class="btn btn-success" onclick="selectGuide(3)">Выбрать</button></td>
-                </tr>
-                <tr id="guideRow4">
-                    <td><img src="image/Photo.jpg" alt="" width="38px" height="38px"></td>
-                    <td>Чеверда Леонид Сергеевич </td>
-                    <td>Китайский, Японский</td>
-                    <td>2 года</td>
-                    <td>10000</td>
-                    <td><button class="btn btn-success" onclick="selectGuide(4)">Выбрать</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-
-<div class="modal fade" id="bookingFormModal" tabindex="-1" role="dialog" aria-labelledby="bookingFormModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content p-4">
-            <div class="modal-header">
-                <h5 class="modal-title" id="bookingFormModalLabel">Оформление заявки</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form id="bookingForm">
-                    <label class="m-2" for="routeName">Название маршрута:</label>
-                    <input class="form-control" type="text" id="routeName" readonly>
-            
-                    <label class="m-2" for="guideName">ФИО гида:</label>
-                    <input class="form-control" type="text" id="guideName" readonly>
-            
-                    <label class="m-2" for="excursionDate">Дата экскурсии:</label>
-                    <input class="form-control" type="date" id="excursionDate" name="excursionDate" required oninput="updatePrice()">
-            
-                    <label class="m-2" for="startTime">Время начала экскурсии:</label>
-                    <input class="form-control" type="time" id="startTime" min="09:00" max="23:00" step="1800" required oninput="updatePrice()">
-            
-                    <label class="m-2" for="duration">Длительность экскурсии:</label>
-                    <select class="form-control" id="duration" required onchange="updatePrice()">
-                        <option value="1">1 час</option>
-                        <option value="2">2 часа</option>
-                        <option value="3">3 часа</option>
-                    </select>
-            
-                    <label class="m-2" for="groupSize">Количество человек в группе:</label>
-                    <input class="form-control" type="number" id="groupSize" min="1" max="20" required value="1" onchange="updatePrice()">
-            
-                    <label class="m-2">Дополнительные опции:</label>
-                    <label class="m-2" >
-                        <input type="checkbox" id="discountCheckbox" onchange="updatePrice()"> Использовать скидку для школьников и студентов (15% скидка)
-                    </label>
+                    <br><br>Когда я не занят программированием, я волшебник в мире Доты. Моя команда и я создаем великолепные стратегии и сражаемся на арене, и это просто невероятное веселье. Мы работаем вместе, чтобы добиться победы!
                     
-                    <label class="m-2" >
-                        <input type="checkbox" id="souvenirCheckbox" onchange="updatePrice()"> Тематические сувениры для посетителей (+500 руб. за каждого посетителя)
-                    </label>
-            
-                    <label class="m-2" for="totalCost">Итоговая стоимость:</label>
-                    <input class="form-control" type="text" id="totalCost" readonly>
-                </form>            
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-success" onclick="submitBookingForm()">Отправить</button>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+                    <br><br>Кроме того, я страстный игрок в Таркове. Каждый рейд - это новое приключение, и я стараюсь использовать свои тактические навыки, чтобы выжить в этом опасном мире после апокалипсиса. Это невероятно напряженное и захватывающее приключение, и я не могу наиграться в Тарков!</p>
+
+                <a class="btn" href="about.html">Подробнее</a>
+
+            </section>
+
+            <section id="skills">
+                <h2>Навыки</h2>
+
+                <p>Я владею несколькими языками программирования, включая Python, JavaScript и Java. Мой опыт веб-разработки позволяет мне создавать интерактивные и пользовательские веб-сайты.
+                    <br>Я являюсь преданным игроком Dota 2 и имею большой опыт в этой игре. Мой скилл растет с каждой игрой, и я стремлюсь к улучшению моей игры и понимания меты.
+                </p>
+
+                <a class="btn" href="skills.html">Подробнее</a>
+
+            </section>
+
+            <section id="technology">
+                <h2>Технологии</h2>
+
+                <h2>Мой топовый ПК:</h2>
+                <ul>
+                    <li><strong>Процессор:</strong> Я использую мощный многопоточный процессор, такой как Intel Core i9 13900k, чтобы обеспечить выдающуюся производительность при многозадачности и обработке данных.</li>
+                    <li><strong>Графическая карта:</strong> Моя видеокарта принадлежит к вершинам графической мощи, это GeForce RTX 4090 от NVIDIA, которая позволяет мне играть в самые современные игры на максимальных настройках и заниматься профессиональным рендерингом.</li>
+                    <li><strong>Оперативная память:</strong> У меня есть 64 ГБ оперативной памяти DDR5, что обеспечивает быструю работу приложений и исключительную производительность в многозадачных сценариях.</li>
+                    <li><strong>Хранение:</strong> Мой ПК оснащен высокоскоростным NVMe SSD для операционной системы и часто используемых приложений, а также большим SSD для хранения данных и всех моих игр.</li>
+                    <li><strong>Охлаждение:</strong> У меня эффективная система охлаждения, которая поддерживает оптимальную температуру даже во время интенсивной нагрузки.</li>
+                </ul>
+                <h3>Языки</h3>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+                <a class="btn" href="technology.html">Подробнее</a>
+                <h2>Отправьте свои советы и предложения</h2>
+                <a class="btn" href="feedback.html">Обратная связь</a><br><br>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer__icon">
+                    <a class="btn__icon" href="https://vk.com/serstul" target="_blank"><i class="fa-brands fa-vk"></i></a> 
+                    <a class="btn__icon" href="https://t.me/StulPlay" target="_blank"><i class="fa-brands fa-telegram"></i></a> 
+                    <a class="btn__icon" href="https://steamcommunity.com/id/stulplay/" target="_blank"><i class="fa-brands fa-steam"></i></a> 
+                    <a class="btn__icon" href="https://github.com/StulPlay" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a class="btn__icon" href="https://www.twitch.tv/stulplay" target="_blank"><i class="fa-brands fa-twitch"></i></a>
+                    <a class="btn__icon" href="https://www.youtube.com/@stulplay9702/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </footer>
 
-<footer class="mt-4 bg-dark text-white p-4">
-    <p class="text-center">Контактные данные: serstul5555@email.com | Телефон: +7 (777) 777-77-77</p>
-</footer>
-
-<script src="map.js"></script>
-<script src="scripts.js"></script>
 </body>
+
 </html>
